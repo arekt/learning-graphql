@@ -9,3 +9,4 @@
 bundle install
 ruby graphql-api.rb "query {users {projects {priority} } }"
 ```
+
