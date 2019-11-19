@@ -1,0 +1,14 @@
+type User {
+  name: String
+  projects: [Project]
+}
+
+type Project {
+  name: String
+  priority: Int
+}
+
+type Query {
+  users: [User]
+}
+
