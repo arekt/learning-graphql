@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem "dry-types", "~> 0.15.0"
-gem "dry-struct", "~> 0.7.0"
-gem "graphql", "~> 1.9"
+gem "dry-validation"
+gem "dry-struct"
+gem "graphql", ">= 1.10.1"
+#gem "dry-validation", "~> 1.5"
