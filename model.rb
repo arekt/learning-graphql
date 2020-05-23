@@ -16,4 +16,8 @@ end
 
 class UserCollection < Dry::Struct
   attribute :users, Types.Array(User)
+
+  def createUser(params, context)
+    User.new(name: params[:name], projects: [], tags: [])
+  end
 end
