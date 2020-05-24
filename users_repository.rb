@@ -11,7 +11,7 @@ class UsersRepository < Model
   end
 
   def createUser(params, context)
-    user = User.new(name: params[:name], projects: [], tags: [])
+    user = User.new(name: params.dig(:input,:name), projects: params.dig(:input,:projects), tags: [])
     users << user
     save
     user

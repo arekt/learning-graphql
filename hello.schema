@@ -12,7 +12,17 @@ type Query {
   users: [User]
 }
 
+input UserInput {
+  name: String
+  projects: [ProjectInput]
+}
+
+input ProjectInput {
+  name: String
+  priority: Int
+}
+
 type Mutation {
-  createUser(name:String): User
+  createUser(input:UserInput): User
 }
 
