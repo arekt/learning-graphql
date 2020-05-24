@@ -8,3 +8,7 @@ gem "dry-validation"
 gem "dry-struct"
 gem "graphql", ">= 1.10.1"
 #gem "dry-validation", "~> 1.5"
+
+gem "activesupport", "~> 6.0"
+
+gem "byebug", "~> 11.1"
