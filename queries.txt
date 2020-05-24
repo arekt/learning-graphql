@@ -1,0 +1,3 @@
+mutation {createUser(input:{name: "Sara", projects:[{name: "a"}]}){name}}
+{users{projects{name}}}
+{users{name,projects{name}}}
